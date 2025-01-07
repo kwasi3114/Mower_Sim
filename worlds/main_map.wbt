@@ -1,0 +1,31 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/Grass.proto"
+EXTERNPROTO "../protos/Tractor.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.05945916737447954 -0.9794388636907155 0.19277997745454228 5.673084059083975
+  position -40.8726239672312 1.6090849288779216 26.711406371498033
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 25 25
+  floorAppearance Grass {
+  }
+}
+Tractor {
+  translation -11.3917 11.02 0.624443
+  rotation 0 1 0 0.129994
+  controller "tractor_bcd_algorithm"
+  controllerArgs [
+    ""
+  ]
+}
